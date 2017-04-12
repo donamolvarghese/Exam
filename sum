@@ -1,0 +1,12 @@
+echo "enter a number"
+read n
+t=$n
+sum=0
+while [ $t -ne 0 ]
+do
+r=$(($t % 10))
+sum=$(($sum + $r))
+t=$(($t / 10))
+done
+echo "Sum is" $sum"
+
